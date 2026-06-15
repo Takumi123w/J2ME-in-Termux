@@ -4,14 +4,14 @@ then
     echo "JDK 17 already installed"
 else
     echo "Install openjdk 17"
-    apt install openjdk-17
+    apt install openjdk-17 -y
 fi
 if ecj -version &> /dev/null
 then
     echo "ECJ already installed"
 else
     echo "Install ECJ"
-    apt install -y ecj
+    apt install -y ecj -y
 fi
 ecj -source 1.3 -target 1.3 -bootclasspath lib/cldcapi11.jar:lib/midpapi20.jar AMIDlet.java
 mkdir -p compiled_classes preverified_classes
