@@ -7,6 +7,7 @@ else
     apt install openjdk-17
 fi
 if ecj -version &> /dev/null
+then
     echo "ECJ already installed"
 else
     echo "Install ECJ"
