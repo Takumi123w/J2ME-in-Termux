@@ -1,0 +1,8 @@
+-injars compiled_classes
+-outjars preverified_classes
+-libraryjars lib/cldcapi11.jar
+-libraryjars lib/midpapi20.jar
+-microedition
+-dontshrink
+-dontoptimize
+-dontobfuscate
