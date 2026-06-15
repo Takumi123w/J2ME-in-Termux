@@ -11,7 +11,7 @@ then
     echo "ECJ already installed"
 else
     echo "Install ECJ"
-    sudo apt install -y ecj
+    apt install -y ecj
 fi
 ecj -source 1.3 -target 1.3 -bootclasspath lib/cldcapi11.jar:lib/midpapi20.jar Midlet.java
 mkdir -p compiled_classes preverified_classes
