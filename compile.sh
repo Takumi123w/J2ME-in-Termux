@@ -13,7 +13,7 @@ else
     echo "Install ECJ"
     apt install -y ecj
 fi
-ecj -source 1.3 -target 1.3 -bootclasspath lib/cldcapi11.jar:lib/midpapi20.jar AMidlet.java
+ecj -source 1.3 -target 1.3 -bootclasspath lib/cldcapi11.jar:lib/midpapi20.jar AMIDlet.java
 mkdir -p compiled_classes preverified_classes
 mv AMIDlet.class compiled_classes/
 java -cp proguard.jar proguard.ProGuard @preverify.pro
