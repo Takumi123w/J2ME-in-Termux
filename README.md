@@ -1,5 +1,6 @@
 Compiler J2ME for termux its work tested app already with nokia asha 210
 
+- termux-setup-storage
 - apt install git -y
 - git clone https://github.com/Takumi123w/J2ME-in-Termux.git
 - cd J2ME-in-Termux
