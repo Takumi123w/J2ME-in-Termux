@@ -19,3 +19,7 @@ mv AMIDlet.class compiled_classes/
 java -cp proguard.jar proguard.ProGuard @preverify.pro
 cd preverified_classes
 jar cvfm ../HelloApp.jar ../MANIFEST.MF AMIDlet.class
+echo ""
+echo "COMPILE DONE"
+echo "COPYING COMPILED JAR INTO /SDCARD/ MAKE SURE ALREADY GRANT TERMUX-SETUP-STORAGE"
+cp ../HelloApp.jar /sdcard/
